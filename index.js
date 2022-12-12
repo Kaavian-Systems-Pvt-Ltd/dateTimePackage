@@ -1,20 +1,25 @@
-let cur_date = new Date();
+const cur_date = new Date();
+
+function currentDate(){
 
 // adjust 0 before single digit date
-let date = ("0" + cur_date.getDate()).slice(-2);
+    let date = ("0" + cur_date.getDate()).slice(-2);
 
-let month = ("0" + (cur_date.getMonth() + 1)).slice(-2);
+    let month = ("0" + (cur_date.getMonth() + 1)).slice(-2);
 
-let year = cur_date.getFullYear();
+    let year = cur_date.getFullYear();
 
-let hours = cur_date.getHours();
+    return[month, date, year].join('-');
+}
+console.log(currentDate(cur_date));
 
-let minutes = cur_date.getMinutes();
+function currentTime(){
+    let hours = cur_date.getHours();
 
-let seconds = cur_date.getSeconds();
+    let minutes = cur_date.getMinutes();
 
-console.log(month + "-" + date + "-" + year);
+    let seconds = ("0" +cur_date.getSeconds()).slice(-2);
 
-//console.log(month + "-" + date + "-" + year + " " + hours + ":" + minutes + ":" + seconds);
-
-console.log(hours + ":" + minutes + ":" + seconds);
+    return[hours, minutes, seconds].join(':');
+}
+console.log(currentTime(cur_date));
