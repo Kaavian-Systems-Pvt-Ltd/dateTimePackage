@@ -16,7 +16,7 @@ console.log(currentDate(cur_date));
 function currentTime(){
     let hours = cur_date.getHours();
 
-    let minutes = cur_date.getMinutes();
+    let minutes = ("0" +cur_date.getMinutes()).slice(-2);
 
     let seconds = ("0" +cur_date.getSeconds()).slice(-2);
 
