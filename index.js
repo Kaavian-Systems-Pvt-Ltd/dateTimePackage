@@ -25,4 +25,16 @@ function currentTime(){
     return(time);
 }
 
-module.exports={currentDate, currentTime};
+function curDateMonthString(){
+
+    // adjust 0 before single digit date
+        let date = ("0" + cur_dateTime.getDate()).slice(-2);
+    
+        let month = cur_dateTime.toLocaleString('default', { month: 'short' });
+    
+        let year = cur_dateTime.getFullYear();
+    
+        return[month, date, year].join('-');
+    }
+
+module.exports={currentDate, currentTime, curDateMonthString};
