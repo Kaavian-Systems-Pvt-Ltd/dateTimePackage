@@ -11,15 +11,20 @@ function currentDate(){
 
     return[month, date, year].join('-');
 }
+console.log(currentDate());
 
 function currentTime(){
-    let hours = cur_dateTime.getHours();
+    const curTime = new Date().toLocaleString('en-US', {
+        timeZone: 'Asia/Calcutta',
+      })
 
-    let minutes = ("0" +cur_dateTime.getMinutes()).slice(-2);
+      let time = curTime.substr(curTime.length - 11);
 
-    let seconds = ("0" +cur_dateTime.getSeconds()).slice(-2);
-
-    return[hours, minutes, seconds].join(':');
+      if (time[0] === ' ') {
+        time = time.replace(/ /, '0');
+      }
+    return(time);
 }
+console.log(currentTime());
 
 module.exports={currentDate, currentTime};
