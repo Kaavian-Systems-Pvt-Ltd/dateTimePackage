@@ -11,7 +11,6 @@ function currentDate(){
 
     return[month, date, year].join('-');
 }
-console.log(currentDate());
 
 function currentTime(){
     let hours = cur_dateTime.getHours();
@@ -22,4 +21,5 @@ function currentTime(){
 
     return[hours, minutes, seconds].join(':');
 }
-console.log(currentTime());
+
+module.exports={currentDate, currentTime};
