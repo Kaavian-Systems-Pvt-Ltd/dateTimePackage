@@ -11,7 +11,6 @@ function currentDate(){
 
     return[month, date, year].join('-');
 }
-console.log(currentDate());
 
 function currentTime(){
     const curTime = new Date().toLocaleString('en-US', {
@@ -25,6 +24,5 @@ function currentTime(){
       }
     return(time);
 }
-console.log(currentTime());
 
 module.exports={currentDate, currentTime};
