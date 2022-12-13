@@ -1,4 +1,4 @@
-# **<center>Date and Time Package**
+# **Date and Time Package**
 
 ## **Dependencies**
 
