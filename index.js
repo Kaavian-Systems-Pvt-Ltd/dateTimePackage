@@ -1,4 +1,8 @@
 const cur_dateTime = new Date();
+/**
+ * This function gives current date...
+ * @returns currentDate
+ */
 
 function currentDate(){
 
@@ -12,6 +16,11 @@ function currentDate(){
     return[month, date, year].join('-');
 }
 
+/**
+ * This function gives current Time...
+ * @returns currentTime
+ */
+
 function currentTime(){
     const curTime = new Date().toLocaleString('en-US', {
         timeZone: 'Asia/Calcutta',
@@ -24,6 +33,11 @@ function currentTime(){
       }
     return(time);
 }
+
+/**
+ * This function gives current date of month display in string...
+ * @returns curDateMonthString
+ */
 
 function curDateMonthString(){
 
