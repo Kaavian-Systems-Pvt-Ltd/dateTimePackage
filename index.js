@@ -25,7 +25,7 @@ function currentTime(){
     const curTime = new Date().toLocaleString('en-US', {
         timeZone: 'Asia/Calcutta',
       })
-
+      
       let time = curTime.substr(curTime.length - 11);
 
       if (time[0] === ' ') {

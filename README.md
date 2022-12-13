@@ -1,11 +1,11 @@
-# **Date and Time Package**
+# **<center><font color='blue'>Date and Time Package</font></center>**
 
-## **Dependencies**
+## **<font color='red'>Dependencies</font>**
 
  github => "datetime" : "https://github.com/Kaavian-Systems-Pvt-Ltd/dateTimePackage.git"
 
 ---
-## _2 types of date formates_
+## <font color='green'> _2 types of date formates_</font>
 =======================
 > * 12-12-2022 (month-date-year)
 > * Dec-12-2022
